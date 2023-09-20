@@ -14,12 +14,13 @@ Este proyecto es una implementación de un exploit de Shellshock, una vulnerabil
 
 ## Uso
 
-1. Ejecute el programa proporcionando una dirección IP de destino.
-2. Elija si desea utilizar un proxy o conectarse directamente al servidor.
-3. Si selecciona el uso de un proxy, ingrese la dirección IP y el puerto del proxy.
-4. El programa se pondrá a la escucha en el puerto 4443.
-5. Ingrese el directorio `/cgi-bin/<dir>` donde se encuentra la vulnerabilidad Shellshock (por defecto: `status`).
-6. El exploit se ejecutará y se establecerá una conexión con el servidor objetivo.
+1. Instale las librerías necesarias para el funcionamiento de la herramienta.
+2. Ejecute el programa proporcionando una dirección IP de destino.
+3. Elija si desea utilizar un proxy o conectarse directamente al servidor.
+4. Si selecciona el uso de un proxy, ingrese la dirección IP y el puerto del proxy.
+5. El programa se pondrá a la escucha en el puerto 4443.
+6. Ingrese el directorio `/cgi-bin/<dir>` donde se encuentra la vulnerabilidad Shellshock (por defecto: `status`).
+7. El exploit se ejecutará y se establecerá una conexión con el servidor objetivo.
 
 ## Requisitos
 
@@ -30,8 +31,13 @@ Este proyecto es una implementación de un exploit de Shellshock, una vulnerabil
 ## Ejemplo de Uso
 
 ```bash
+$ python3 install -r requirements.txt
+```
+```bash
 $ python3 ShellXock.py
+```
 or
+```bash
 $ ./ShellXock.py
 ```
 
